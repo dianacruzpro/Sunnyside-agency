@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&family=Kavoon&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/styles.css">
+  <script defer src="./dist/script.js"></script>
+
+  <title>Sunnyside agency landing page</title>
+
+</head>
+<body>
+
+  <header class="header container">
+    <div class="header__logo">
+      <img src="./images/logo.svg" alt="sunnyside" class="header__logo--img">
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__ul">
+        <li class="nav__li"><a href="#about" class="nav__a">About</a></li>
+        <li class="nav__li"><a href="#services" class="nav__a">Services</a></li>
+        <li class="nav__li"><a href="#projects" class="nav__a">Projects</a></li>
+        <li class="nav__li"><a href="#contact" class="nav__a">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="header__btn">
+      <img class="header__btn--img" src="./images/icon-hamburger.svg" alt="btn nav">
+    </button>
+  </header>
+
+  <main>
+    <section class="section hero">
+      <picture class="hero__picture">
+        <source media="(min-width: 640px)" srcset="./images/desktop/image-header.jpg">
+        <img class="hero__img" src="./images/mobile/image-header.jpg" alt="header" class="hero__img">
+      </picture>
+      <div class="hero__content container">
+        <h1 class="hero__content--h1">We are creatives</h1>
+        <img class="hero__content--arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
+      </div>
+    </section>
+    <section class="section about" id="about">
+      <picture class="about__picture about__picture--1">
+        <source media="(min-width:640px)" srcset="./images/desktop/image-transform.jpg">
+        <img src="./images/mobile/image-transform.jpg" alt="#" class="about__img">
+      </picture>
+      <div class="about__post about__post--1">
+        <h2 class="about__h2">Transform your brand</h2>
+        <p class="about__text">We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <button class="about__btn about__btn--1">Learn more</button>
+      </div>
+      <picture class="about__picture about__picture--2">
+        <source media="(min-width:640px)" srcset="./images/desktop/image-stand-out.jpg">
+        <img src="./images/mobile/image-stand-out.jpg" alt="#" class="about__img">
+      </picture>
+      <div class="about__post about__post--2">
+        <h2 class="about__h2">Stand out to the right audience</h2>
+        <p class="about__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <button class="about__btn about__btn--2">Learn more</button>
+      </div>
+    </section>
+    <section class="section services" id="services">
+      <picture class="services__item">
+        <source media="(min-width:640px)" srcset="./images/desktop/image-graphic-design.jpg">
+        <img src="./images/mobile/image-graphic-design.jpg" alt="#" class="services__img">
+        <div class="services__content">
+          <h2 class="services__h2">Graphic design</h2>
+          <p class="services__text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+      </picture>
+      <picture class="services__item">
+        <source media="(min-width:640px)" srcset="./images/desktop/image-photography.jpg">
+        <img src="./images/mobile/image-photography.jpg" alt="#" class="services__img">
+        <div class="services__content">
+          <h2 class="services__h2">Photography</h2>
+          <p class="services__text">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </picture>
+    </section>
+    <section class="section testimonials" id="testimonials">
+      <h2 class="testimonials__heading">Client testimonials</h2>
+      <div class="testimonials__container">
+        <div class="testimonials__card card">
+          <img src="./images/image-emily.jpg" alt="#" class="card__img">
+          <p class="card__text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <div class="card__user">
+            <span class="card__user--name">Emily R.</span>
+            <span class="card__user--work">Marketing Director</span>
+          </div>
+        </div>
+        <div class="testimonials__card card">
+          <img src="./images/image-thomas.jpg" alt="#" class="card__img">
+          <p class="card__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <div class="card__user">
+            <span class="card__user--name">Thomas S.</span>
+            <span class="card__user--work">Chief Operating Officer</span>
+          </div>
+        </div>
+        <div class="testimonials__card card">
+          <img src="./images/image-jennie.jpg" alt="#" class="card__img">
+          <p class="card__text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <div class="card__user">
+            <span class="card__user--name">Jennie F.</span>
+            <span class="card__user--work">Business Owner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section projects" id="projects">
+      <div class="projects__item">
+        <picture class="projects__item--picture">
+          <source media="(min-width:640px)" srcset="./images/desktop/image-gallery-milkbottles.jpg">
+          <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="#">
+        </picture>
+      </div>
+      <div class="projects__item">
+        <picture class="projects__item--picture">
+          <source media="(min-width:640px)" srcset="./images/desktop/image-gallery-orange.jpg">
+          <img src="./images/mobile/image-gallery-orange.jpg" alt="#">
+        </picture>
+      </div>
+      <div class="projects__item">
+        <picture class="projects__item--picture">
+          <source media="(min-width:640px)" srcset="./images/desktop/image-gallery-cone.jpg">
+          <img src="./images/mobile/image-gallery-cone.jpg" alt="#">
+        </picture>
+      </div>
+      <div class="projects__item">
+        <picture class="projects__item--picture">
+          <source media="(min-width:640px)" srcset="./images/desktop/image-gallery-sugar-cubes.jpg">
+          <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="#">
+        </picture>
+      </div>
+    </section>
+    <section class="section contact" id="contact">
+      <div class="contact__logo">
+        <img src="./images/logo.svg" alt="sunnyside" class="contact__logo--img">
+      </div>
+      <div class="contact__nav">
+        <ul class="contact__ul">
+          <li class="contact__li"><a href="#about" class="contact__a">About</a></li>
+          <li class="contact__li"><a href="#services" class="contact__a">Services</a></li>
+          <li class="contact__li"><a href="#projects" class="contact__a">Projects</a></li>
+        </ul>
+      </div>
+      <div class="contact__ssmm ssmm">
+        <a href="#" class="ssmm--a">
+          <img src="./images/icon-facebook.svg" alt="facebook" class="ssmm__img">
+        </a>
+        <a href="#" class="ssmm__a">
+          <img src="./images/icon-instagram.svg" alt="instagram" class="ssmm__img">
+        </a>
+        <a href="#" class="ssmm__a">
+          <img src="./images/icon-twitter.svg" alt="twitter" class="ssmm__img">
+        </a>
+        <a href="#" class="ssmm__a">
+          <img src="./images/icon-pinterest.svg" alt="pinterest" class="ssmm__img">
+        </a>
+        
+        
+        
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <footer class="attribution">
+    <div class="attribution__text">
+      <p class="attribution__text--p">Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="attribution__text--a">Frontend Mentor</a>
+      </p>
+      <p class="attribution__text--p">Coded by
+        <a href="https://dianacruz.pro" target="_blank" class="attribution__text--a" >Diana Cruz</a>
+      </p>
+    </div>  
+    <a href="https://www.frontendmentor.io/profile/DianaVCruz" target="_blank">
+      <img class="attribution__img" src="./images/programmer.webp" alt="programmer"/>
+    </a>
+  </footer>
+</body>
+</html>

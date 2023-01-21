@@ -1,0 +1,89 @@
+@use '../util/' as *;
+
+.about{
+  display: grid;
+  grid-template-columns: 1fr;
+  @include breakpoint(medium){
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: "text1 img1"
+                         "img2 text2";
+  }
+
+  &__picture{
+    
+    @include breakpoint(medium){
+      &--1{
+        grid-area: img1;
+      }
+      &--2{
+        grid-area: img2;
+      }
+    }
+  }
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__post{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem; 
+    padding: 4rem 2rem;
+    
+    @include breakpoint(large){
+      padding: 8rem;
+
+      &--1{
+        grid-area: text1;
+      }
+      &--2{
+        grid-area: text2;
+      }
+    }
+  }
+  &__h2{
+    font-family: var(--font-family-2);
+    font-size: 2rem;
+    line-height: 2rem;
+    transition: .5s ease-in-out;
+    @include breakpoint(large){
+      font-size: 2.6rem;
+      line-height: 2.6rem;
+    }
+  }
+  &__text{
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    color: var(--Very-dark-grayish-blue);
+    transition: .5s ease-in-out;
+    @include breakpoint(large){
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
+  }
+  &__btn{
+    cursor: pointer;
+    font-weight: 700;
+    border-bottom: 2px solid var(--Yellow-transparent);
+    transition: .5s ease-in-out;
+    @include breakpoint(large){
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
+    &:hover{
+      border-bottom: 2px solid var(--Yellow);
+    }
+    
+    &--2{
+      border-bottom: 2px solid var(--Soft-red-transparent);
+      &:hover{
+        border-bottom: 2px solid var(--Soft-red);
+      }
+      
+    }
+  }
+}

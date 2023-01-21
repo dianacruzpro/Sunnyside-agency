@@ -1,0 +1,69 @@
+@use '../util/' as *;
+
+.nav{
+  position: relative;
+  background-color: var(--White);
+  margin-top: 3.5rem;
+
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+
+  @include breakpoint(medium){
+    background-color: transparent;
+    
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    border-right: 1rem solid var(--White);
+    border-top: 1rem solid transparent;
+    border-left:1rem solid transparent;
+    border-bottom:1rem solid var(--White);
+    transform: translateY(-99%);
+    @include breakpoint(medium){
+      display: none;
+    }
+  }
+
+  &__ul{
+    text-align: center;
+    padding: 1rem 0;
+
+    @include breakpoint(medium){
+      display: flex;
+      padding: 0;
+    }
+  }
+  &__li{
+    padding: .5rem 0;
+    @include breakpoint(medium){
+      padding: 0;
+    }
+    &:last-child a{
+      color: var(--Very-dark-desaturated-blue);
+      background-color: var(--Yellow);
+      border-radius: 2rem;
+      width: 40%;
+      margin: 0 auto;
+
+      @include breakpoint(medium){
+        width: 100%;
+      }
+    }
+  }
+  &__a{
+    color: var(--Very-dark-grayish-blue);
+    padding: .5rem 1rem;
+    @include breakpoint(medium){
+      color: var(--White);
+    }
+  }
+}

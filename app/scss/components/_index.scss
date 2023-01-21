@@ -1,0 +1,31 @@
+@forward 'header';
+@forward 'nav';
+@forward 'attribution';
+@forward 'about';
+.hero{
+  position: relative;
+  // &__picture{}
+  // &__img{}
+  &__content{
+    position: absolute;
+    top: 0;
+    transform: translateY(50%);
+    width: 100%;
+    &--h1{
+      // border: 1px solid red;
+      text-align: center;
+      font-family: var(--font-family-2);
+      color: var(--White);
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+      letter-spacing: .5rem;
+      margin-bottom: 3rem;
+    }
+    
+    &--arrow{
+      width: 3rem;
+      margin: 0 auto;
+    }
+  }
+}
+

@@ -1,0 +1,2 @@
+"use strict";var d=document,$header=d.querySelector(".header");d.addEventListener("click",(function(e){(e.target.matches(".header__btn")||e.target.matches(".header__btn".concat(" *")))&&$header.classList.toggle("open"),e.target.matches(".nav__a")&&$header.classList.remove("open")}));
+//# sourceMappingURL=script.js.map

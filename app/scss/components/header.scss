@@ -1,0 +1,57 @@
+@use '../util/' as *;
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(1rem);
+  width: 100%;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  overflow: hidden;
+  height: 4.5rem;
+  transition: .5s ease-in-out;
+  z-index: 1;
+  @include breakpoint(medium){
+    height: auto;
+  }
+
+  &__logo{
+    order: 1;
+    &--img{
+      width: auto;
+      height: 1.6rem;
+    }
+  }
+  &__nav{
+    order: 3;
+    width: 100%;
+    
+    
+    @include breakpoint(medium){
+      order: 2;
+      width: auto;
+      height: auto;
+    }
+  }
+  &__btn{
+    order: 2;
+    cursor: pointer;
+    @include breakpoint(medium){
+      display: none;
+    }
+    
+    &--img{
+      width: auto;
+      height: 1.4rem;
+    }
+  }
+}
+.open{
+  height: 24rem;
+  pointer-events: auto;
+}
