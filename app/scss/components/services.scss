@@ -11,6 +11,10 @@
   &__item{
     position: relative;
     max-height: 100vh;
+    transform: translateX(-100%);
+    &:last-child{
+      transition-delay: 200ms;
+    }
   }
   &__img{
     width: 100%;

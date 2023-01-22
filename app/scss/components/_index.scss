@@ -1,10 +1,15 @@
+@use '../util/' as *;
 @forward 'header';
 @forward 'nav';
 @forward 'attribution';
 @forward 'about';
 @forward 'services';
+@forward 'testimonials';
+@forward 'contact';
+
 .hero{
   position: relative;
+  transform: translateY(-50%);
   // &__picture{}
   // &__img{}
   &__content{
@@ -29,4 +34,38 @@
     }
   }
 }
+
+.projects{
+  @include flexbox(row, wrap, center, center,0);
+
+  &__item{
+    flex: 1 1 100%;
+    @include breakpoint(medium){
+      flex: 1 1 50%;
+    }
+    @include breakpoint(large){
+      flex: 1 1 25%;
+    }
+  }
+}
+
+
+.hidden{
+  opacity: 0;
+  filter: blur(.5rem);
+  transition: .5s ease-in-out;
+}
+
+@media(preferences-reduced-motion){
+  .hidden{
+    transition: none;
+  }
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
+}
+
 

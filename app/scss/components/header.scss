@@ -25,6 +25,11 @@
     &--img{
       width: auto;
       height: 1.6rem;
+      transition: .5s ease-in-out;
+
+      @include breakpoint(large){
+        height: 2rem;
+      }
     }
   }
   &__nav{

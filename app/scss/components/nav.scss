@@ -53,9 +53,14 @@
       border-radius: 2rem;
       width: 40%;
       margin: 0 auto;
-
+      transition: .4s ease-in-out;
       @include breakpoint(medium){
         width: 100%;
+      }
+
+      &:hover{
+        color: var(--White);
+        background-color: var(--White-transparent);
       }
     }
   }

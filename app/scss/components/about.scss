@@ -15,8 +15,10 @@
     @include breakpoint(medium){
       &--1{
         grid-area: img1;
+        transform: translateX(100%);
       }
       &--2{
+        transform: translateX(-100%);
         grid-area: img2;
       }
     }
