@@ -57,7 +57,7 @@
   }
   &__text{
     font-size: 1.1rem;
-    line-height: 1.2rem;
+    line-height: 1.6rem;
     color: var(--Very-dark-grayish-blue);
     transition: .5s ease-in-out;
     @include breakpoint(large){
@@ -68,20 +68,37 @@
   &__btn{
     cursor: pointer;
     font-weight: 700;
-    border-bottom: 2px solid var(--Yellow-transparent);
     transition: .5s ease-in-out;
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: .375rem;
+      background-color: var(--Yellow-transparent);
+      bottom: -.30rem;
+      border-radius: 2rem;
+      left: 0;
+      transition: .3s ease-in-out;
+      z-index: -1;
+    }
+    &:hover::after{
+      background-color: var(--Yellow);
+      bottom: -.18rem;
+    }
+    
     @include breakpoint(large){
       font-size: 1.2rem;
       line-height: 1.2rem;
     }
-    &:hover{
-      border-bottom: 2px solid var(--Yellow);
-    }
     
     &--2{
-      border-bottom: 2px solid var(--Soft-red-transparent);
-      &:hover{
-        border-bottom: 2px solid var(--Soft-red);
+      &::after{
+        background-color: var(--Soft-red-transparent);
+      }
+      &:hover::after{
+        background-color: var(--Soft-red);
       }
       
     }

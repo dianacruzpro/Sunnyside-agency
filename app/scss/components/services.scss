@@ -1,0 +1,50 @@
+@use '../util/' as *;
+
+.services{
+  display: flex;
+  flex-flow: column wrap;
+
+  @include breakpoint(large){
+    flex-flow: row nowrap;
+  }
+
+  &__item{
+    position: relative;
+    max-height: 100vh;
+  }
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__content{
+    position: absolute;
+    bottom: 0;
+    padding: 0 2rem 3rem;
+    text-align: center;
+    &--1{
+      color: var(--graphic-design-text);
+    }
+    &--2{
+      color: var(--photography-text);
+    }
+    @include breakpoint(medium){
+      width: 75%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @include breakpoint(large){
+      width: 60%;
+    }
+  }
+  &__h2{
+    font-family: var(--font-family-2);
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+  &__text{
+    font-weight: 700;
+    line-height: 1.8rem;
+  }
+}
