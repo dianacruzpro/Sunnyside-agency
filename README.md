@@ -29,8 +29,8 @@ I should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [This is the Github Repository](https://github.com/dianacruzpro/Sunnyside-agency)
+- [Check it out on Netlify](https://sunnyside-landingpage-fm.netlify.app/)
 
 ## My process
 
